@@ -30,3 +30,14 @@ function onConnectionLost(responseObject) {
 function onMessageArrived(message) {
   console.log("onMessageArrived:"+message.payloadString);
 }
+
+
+function setup() {
+	createCanvas(600, 400);
+}
+
+function draw() {
+	background(51);
+	fill(255,0,0);
+	ellipse(100, 100, 25,25);
+}
