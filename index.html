@@ -3,7 +3,7 @@
     <script src="p5.dom.min.js"></script>
     <script src="p5.sound.min.js"></script>
     <script src="paho-mqtt-.min.js"></script>
-    <script src="mqttws31.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js"type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
 <button onclick="client.connect(options);">1. Connect</button>
@@ -11,9 +11,10 @@
 <button onclick="publish('Hello Foo gm!','testtopic/bar',2);">3. Publish</button>
 <button onclick="client.disconnect();">(4. Disconnect)</button>
 <div id="messages"></div>
+    <script src="sketch.js"></script>
   </head>
   <body>
-    <script src="sketch.js"></script>
+    
   
 
 </body></html>
