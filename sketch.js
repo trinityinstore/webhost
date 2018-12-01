@@ -30,7 +30,7 @@
    useSSL: true,
    userName: "qahuozmh",
    password: "Pmg_utuFZLF4",
-   timeout: 3,
+   timeout: 10,
    //Gets Called if the connection has sucessfully been established
    onSuccess: function() {
      alert("Connected");
