@@ -22,7 +22,7 @@
  //Gets called whenever you receive a message for your subscriptions
  client.onMessageArrived = function(message) {
    //Do something with the push message you received
-   ('#messages').append('<span>Topic: ' + message.destinationName + '  | ' + message.payloadString + '</span><br/>');
+   $('#messages').append('<span>Topic: ' + message.destinationName + '  | ' + message.payloadString + '</span><br/>');
  };
 
  //Connect Options
