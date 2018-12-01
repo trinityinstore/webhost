@@ -8,7 +8,7 @@
     <meta charset="utf-8">
 <button onclick="client.connect(options);">1. Connect</button>
 <button onclick="client.subscribe('node-red test gm/#', {qos: 2}); alert('Subscribed');">2. Subscribe</button>
-<button onclick="publish('Hello Foo !','node-red test gm/bar',2);">3. Publish</button>
+<button onclick="publish('Hello from github','node-red test gm/bar',2);">3. Publish</button>
 <button onclick="client.disconnect();">(4. Disconnect)</button>
 <div id="messages"></div>
     <script src="sketch.js"></script>
