@@ -11,7 +11,7 @@ function draw() {
 
 
 //Using the HiveMQ public Broker, with a random client Id
- var client = new Messaging.Client("m15.cloudmqtt.com", 16907, "myclientid_" + parseInt(Math.random() * 100, 10));
+ var client = new Messaging.Client("m15.cloudmqtt.com", 36907, "myclientid_" + parseInt(Math.random() * 100, 10));
 
  //Gets  called if the websocket/mqtt connection gets disconnected for any reason
  client.onConnectionLost = function(responseObject) {
@@ -27,6 +27,9 @@ function draw() {
 
  //Connect Options
  var options = {
+   useSSL: true,
+   userName: "qahuozmh",
+   password: "Pmg_utuFZLF4",
    timeout: 3,
    //Gets Called if the connection has sucessfully been established
    onSuccess: function() {
